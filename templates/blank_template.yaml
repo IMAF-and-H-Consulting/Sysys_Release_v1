@@ -1,0 +1,116 @@
+# Sysys Research Configuration - Blank Current-Schema Template
+#
+# Copy this file, fill in research-specific values, and load it via
+# File > Settings. Keep the filled-in file inside your review project.
+
+name: "my-review"
+description: >
+  Describe the review topic and scope.
+
+hypothesis_text: >
+  State the hypothesis or review focus that downstream components should use.
+
+co_occurring_conditions: []
+alignment_dimension: "Evidence alignment to the research question"
+
+search:
+  base_terms: []
+  domains:
+    - name: "Primary domain"
+      terms: []
+      require_also: []
+
+relevance:
+  threshold: 3
+  research_question: >
+    State the research question used for LLM relevance scoring.
+  rubric:
+    0: "Completely irrelevant to the research question"
+    1: "Tangentially related"
+    2: "Somewhat related"
+    3: "Moderately relevant"
+    4: "Highly relevant"
+    5: "Essential evidence for the research question"
+
+extraction:
+  fields:
+    - name: "findings"
+      type: "list"
+      description: "Empirical findings from the study"
+    - name: "mechanisms"
+      type: "list"
+      description: "Mechanisms, constructs, or explanatory factors discussed"
+    - name: "conditions"
+      type: "list"
+      description: "Populations, conditions, constructs, or contextual factors studied"
+    - name: "key_entities"
+      type: "list"
+      description: "Specific entities, systems, variables, or constructs the findings concern"
+    - name: "methodology"
+      type: "string"
+      description: "Brief methodology summary"
+    - name: "supports_primary_question"
+      type: "boolean"
+      description: "Does the evidence directly support or inform the configured research question?"
+    - name: "evidence_direction"
+      type: "string"
+      description: "One of: supports, contradicts, neutral. Does the evidence support, contradict, or stay neutral toward the configured research question?"
+    - name: "network_effects_described"
+      type: "boolean"
+      description: "Does the evidence describe relationships among systems, networks, or interacting constructs?"
+    - name: "relationships"
+      type: "string"
+      description: "Relationship among the primary topic, populations, constructs, or contextual factors"
+    - name: "key_quote"
+      type: "string"
+      description: "Single most relevant verbatim sentence from the paper text"
+
+# Optional project-wide canonical vocabularies for structured labels.  Only
+# categorical fields are changed; findings, quotes, methods, and source text
+# remain verbatim.  A configured canonical spelling wins over automatic
+# case/acronym/plural equivalence.
+normalization:
+  schema_version: 1
+  fields:
+    claims.conditions: {mode: categorical, vocabulary: conditions}
+    claims.mechanisms: {mode: categorical}
+    claims.key_entities: {mode: categorical}
+    statistics.population: {mode: categorical}
+    statistics.outcome: {mode: categorical}
+    statistics.comparison: {mode: categorical}
+  vocabularies:
+    conditions: {}
+
+synthesis:
+  n_clusters: 8
+  embedding_model: "all-MiniLM-L6-v2"
+  target_word_count: 300
+
+natural_language_question: ""
+query_families: []
+
+defaults:
+  per_source_limit: 100
+
+axes:
+  - id: axis_a
+    display_name: "Primary conceptual axis A"
+    description_for_prompt: >
+      Does the paper substantively address the first core review theme?
+  - id: axis_b
+    display_name: "Primary conceptual axis B"
+    description_for_prompt: >
+      Does the paper substantively address the second core review theme?
+  - id: integration
+    display_name: "Cross-domain integration"
+    description_for_prompt: >
+      Does the paper genuinely connect multiple review themes?
+  - id: domain_context
+    display_name: "Intended scientific context"
+    description_for_prompt: >
+      Are the key terms used in the intended domain sense?
+
+graph_analysis:
+  conditions: {}
+  structural_regions: {}
+  functional_networks: {}

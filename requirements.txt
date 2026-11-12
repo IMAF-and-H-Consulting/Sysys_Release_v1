@@ -1,0 +1,42 @@
+# SystS poster release: runtime dependencies only.
+# Install with: python -m pip install -r requirements.txt
+
+# ── Core numerics & I/O ──────────────────────────────────────────
+numpy>=1.24
+scipy>=1.11
+httpx>=0.24
+requests>=2.31
+pyyaml>=6.0
+rapidfuzz>=3.0
+
+# ── GUI (PySide6 desktop application) ────────────────────────────
+PySide6>=6.5
+matplotlib>=3.7
+
+# ── LLM providers (configure the ones you use) ───────────────────
+# Upper bounds cap each at the newest major the test suite has run against.
+openai>=1.0,<4
+anthropic>=0.20,<1.0            # client call still uses the pre-1.x temperature contract
+ollama>=0.6                      # local Ollama backend
+
+# ── Machine learning & relevance screening ───────────────────────
+scikit-learn>=1.4               # >=1.4 for root_mean_squared_error()
+sentence-transformers>=4.0,<7   # embeddings / CrossEncoder (TF-IDF fallback for clustering)
+torch>=2.1                      # BRT-BERT / cascade inference
+transformers>=4.41              # BRT-BERT scorer
+laya==0.3.26                    # calibrated pw4 relevance cascade runtime
+
+# ── Network analysis ─────────────────────────────────────────────
+networkx>=3.1                   # graph algorithms
+python-louvain>=0.16            # Louvain community detection
+
+# ── PDF & fulltext extraction ────────────────────────────────────
+PyMuPDF>=1.23                   # fitz — fast PDF text extraction
+pypdf>=4.0                      # second-choice PDF reader
+beautifulsoup4>=4.12            # HTML parsing for fulltext
+paper-qa>=5.0                   # PaperQA2 full-text RAG database
+
+# Optional additional PDF fallbacks (not needed for the standard readers).
+# pdftotext also requires the system Poppler library.
+#pdftotext>=2.2
+#PyPDF2>=3.0

@@ -1,0 +1,42 @@
+# Domain-neutral extraction defaults and study-design vocabulary.
+extraction:
+  methodology_hints: [meta-analysis, systematic review, cohort, cross-sectional, case-control, randomized, randomised, longitudinal, mixed methods]
+  finding_hints: [we found, we show, showed, demonstrated, results indicate, associated with, correlated with, significant, increased, decreased, altered, impaired, supports]
+method_review:
+  - study_method_type: systematic_review_meta_analysis
+    any_terms: [meta-analysis, systematic review]
+    confidence: 0.7
+  - study_method_type: randomized_controlled_trial
+    any_terms: [randomized, randomised]
+    all_terms: [controlled]
+    confidence: 0.6
+  - study_method_type: cohort_observational
+    any_terms: [cohort]
+    confidence: 0.5
+  - study_method_type: case_control
+    any_terms: [case-control, case control]
+    confidence: 0.5
+  - study_method_type: cross_sectional
+    any_terms: [cross-sectional, cross sectional]
+    confidence: 0.5
+  - study_method_type: longitudinal
+    any_terms: [longitudinal]
+    confidence: 0.5
+  - study_method_type: preclinical_animal
+    any_terms: [mouse, mice, rat, rats, zebrafish, animal, animals]
+    confidence: 0.5
+  - study_method_type: in_vitro_cellular
+    any_terms: [in vitro, cell line, cell culture]
+    confidence: 0.4
+  - study_method_type: genetic_association
+    any_terms: [genome-wide, gwas, snp, allele, polymorphism]
+    confidence: 0.4
+  - study_method_type: case_report_case_series
+    any_terms: [case report, case series]
+    confidence: 0.4
+  - study_method_type: narrative_review
+    any_terms: [narrative review, review article]
+    confidence: 0.4
+  - study_method_type: methods_protocol
+    any_terms: [protocol, methods paper]
+    confidence: 0.3

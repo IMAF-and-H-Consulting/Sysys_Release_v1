@@ -1,0 +1,76 @@
+# Python environments, caches, and build products
+venv/
+.venv*/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage*
+htmlcov/
+build/
+dist/
+
+# Local credentials and project configuration
+.env
+.env.*
+!.env.example
+pipeline_config*.json
+project_state.json
+/research_config.yaml
+/research_config.yml
+/research_config.json
+/config/
+/config.toml
+
+# Review projects, generated outputs, downloads, and logs
+/data/
+/output/
+/snapshots/
+/projects/
+*.log
+*.zip
+*.tar.gz
+/abstract.md
+/corpus.bib
+/evidence_network_*.svg
+/coordinates*.csv
+/coordinates*.txt
+/nimare_dataset*.json
+
+# Model packages and weights are installed separately
+/laya-screener-pw4/
+/brt-bert-relevance/
+/brt-bert-irr-buddy-mlm/
+/biobert/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.arrow
+
+# Local editor and development-assistant files
+.idea/
+.vscode/
+.claude/
+.codex/
+.kilo/
+.cursor/
+.specstory/
+AGENTS.md
+CLAUDE.md
+agentic_note.md
+node_modules/
+/mess/
+
+# Operating-system metadata and editor backups
+.DS_Store
+.AppleDouble
+._*
+Thumbs.db
+*.swp
+*.swo
+*~

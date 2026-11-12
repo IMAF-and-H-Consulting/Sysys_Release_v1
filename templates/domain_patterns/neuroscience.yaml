@@ -1,0 +1,243 @@
+# Explicit opt-in vocabulary; selected by defaults.pattern_pack: neuroscience.
+graph_analysis:
+  conditions:
+    Fragile X:
+    - \bFragile X\b
+    - \bFMR1\b
+    - \bfragile X syndrome\b
+    Rett syndrome:
+    - \bRett syndrome\b
+    - \bRett\b
+    - \bMECP2\b
+    Anxiety:
+    - \banxiety\b
+    - \banxious\b
+    - \bGAD\b
+    - \bgeneralized anxiety\b
+    ADHD:
+    - \bADHD\b
+    - \battention.deficit\b
+    - \bhyperactivity\b
+    Epilepsy:
+    - \bepilepsy\b
+    - \bseizure\b
+    - \bepileptic\b
+    Sensory Processing:
+    - \bsensory processing\b
+    - \bSPD\b
+    - \bsensory.over.?responsivity\b
+    - \bsensory.under.?responsivity\b
+    Sleep Disorders:
+    - \binsomnia\b
+    - \bsleep disorder\b
+    - \bsleep disturbance\b
+    - \bcircadian\b
+    GI Disorders:
+    - \bgastrointestinal\b
+    - \bGI disorder\b
+    - \bgut.brain\b
+    - \bmicrobiome\b
+    Depression:
+    - \bdepression\b
+    - \bdepressive\b
+    - \bMDD\b
+    - \bmajor depressive\b
+    OCD:
+    - \bOCD\b
+    - \bobsessive.compulsive\b
+    - \brepetitive behavio
+    - \bRRBI\b
+    Intellectual Disability:
+    - \bintellectual disability\b
+    - \bID\b
+    - \bcognitive impairment\b
+  structural_regions:
+    Prefrontal Cortex:
+    - \bPFC\b
+    - \bprefrontal\b
+    - \bdlPFC\b
+    - \bvmPFC\b
+    Amygdala:
+    - \bamygdala\b
+    - \bamygdalar\b
+    Hippocampus:
+    - \bhippocampus\b
+    - \bhippocampal\b
+    Insula:
+    - \binsula\b
+    - \binsular cortex\b
+    Anterior Cingulate:
+    - \bACC\b
+    - \banterior cingulate\b
+    - \bdACC\b
+    Thalamus:
+    - \bthalamus\b
+    - \bthalamic\b
+    Cerebellum:
+    - \bcerebellum\b
+    - \bcerebellar\b
+    Basal Ganglia:
+    - \bbasal ganglia\b
+    - \bstriatum\b
+    - \bcaudate\b
+    - \bputamen\b
+    Superior Temporal Sulcus:
+    - \bSTS\b
+    - \bsuperior temporal sulcus\b
+    Fusiform Gyrus:
+    - \bfusiform\b
+    - \bFFA\b
+    Motor Cortex:
+    - \bmotor cortex\b
+    - \bprimary motor\b
+    - \bM1\b
+    Sensory Cortex:
+    - \bsomatosensory\b
+    - \bS1\b
+    - \bsensory cortex\b
+    Temporal Lobe:
+    - \btemporal lobe\b
+    - \btemporal cortex\b
+    Parietal Cortex:
+    - \bparietal\b
+    - \bIPL\b
+    - \bSPL\b
+    Occipital Cortex:
+    - \boccipital\b
+    - \bvisual cortex\b
+    - \bV1\b
+  functional_networks:
+    Default Mode:
+    - \bDMN\b
+    - \bdefault mode\b
+    Salience:
+    - \bsalience network\b
+    - \bSN\b
+    Central Executive:
+    - \bCEN\b
+    - \bcentral executive\b
+    - \bfrontoparietal\b
+    Sensorimotor:
+    - \bsensorimotor\b
+    - \bSMN\b
+    Visual:
+    - \bvisual network\b
+    - \bVN\b
+    Dorsal Attention:
+    - \bdorsal attention\b
+    - \bDAN\b
+    Ventral Attention:
+    - \bventral attention\b
+    - \bVAN\b
+    Limbic:
+    - \blimbic\b
+    - \blimbic network\b
+extraction:
+  conditions:
+    autism spectrum disorder:
+    - \bautism spectrum disorder\b
+    - \bASD\b
+    - \bautism\b
+    ADHD:
+    - \bADHD\b
+    - \battention-?deficit/hyperactivity disorder\b
+    anxiety:
+    - \banxiety\b
+    - \banxious\b
+    OCD:
+    - \bOCD\b
+    - \bobsessive-?compulsive disorder\b
+    epilepsy:
+    - \bepilepsy\b
+    - \bepileptic\b
+    - \bseizure(?:s)?\b
+    schizophrenia:
+    - \bschizophrenia\b
+    - \bschizophrenic\b
+    Rett syndrome:
+    - \bRett\b
+    fragile X syndrome:
+    - \bfragile X\b
+  mechanisms:
+  - GABAergic
+  - glutamatergic
+  - glutamate
+  - GABA
+  - criticality
+  - critical brain dynamics
+  - excitation/inhibition balance
+  - E/I imbalance
+  - excitatory inhibitory balance
+  - synaptic transmission
+  - network dynamics
+  - functional connectivity
+  - structural connectivity
+  - white matter
+  - connectome
+  - mGluR1 signaling
+  - interneuron dysfunction
+  - chloride homeostasis
+  - neuronal excitability
+  brain_regions:
+  - prefrontal cortex
+  - PFC
+  - amygdala
+  - hippocampus
+  - cerebellum
+  - striatum
+  - thalamus
+  - cortex
+  - neocortex
+  - insula
+  - orbitofrontal cortex
+  - temporal cortex
+  - parietal cortex
+  - auditory cortex
+  - DMN
+  - default mode network
+  - salience network
+  - frontoparietal
+  - connectome
+  - white matter
+  methodology_hints:
+  - meta-analysis
+  - systematic review
+  - cohort
+  - cross-sectional
+  - case-control
+  - randomized
+  - fmri
+  - fMRI
+  - EEG
+  - MEG
+  - PET
+  - MRI
+  - DTI
+  - mouse
+  - mice
+  - rat
+  - zebrafish
+  criticality_terms:
+  - E/I
+  - excitation
+  - excitatory
+  - inhibition
+  - inhibitory
+  - criticality
+  - GABA
+  - GABAergic
+  - glutamate
+  - glutamatergic
+  network_terms:
+  - network
+  - networks
+  - connectivity
+  - connectome
+# Prepended to the general pack's method rules when this pack is selected.
+method_review:
+  - study_method_type: imaging_ml_classifier
+    any_terms: [fmri, eeg, mri, meg, pet scan, pet imaging, positron emission]
+    confidence: 0.4
+  - study_method_type: in_vitro_cellular
+    any_terms: [cultured neurons, neuronal culture]
+    confidence: 0.4
