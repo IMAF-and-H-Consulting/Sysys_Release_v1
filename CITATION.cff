@@ -1,0 +1,21 @@
+cff-version: "1.2.0"
+message: "If you use SystS in your research, please cite the software."
+type: software
+title: "SystS"
+authors:
+  - family-names: "House"
+    given-names: "Michael S."
+    orcid: "https://orcid.org/0009-0004-0282-2347"
+repository-code: "https://github.com/IMAF-and-H-Consulting/Sysys_Release_v1"
+abstract: >-
+  SystS is a desktop application for systematic reviews and meta-analysis.
+  It searches academic databases, screens studies, and links extracted claims
+  and statistics to passages in the source papers. Researchers can inspect
+  those passages, pool effect sizes, run robustness checks, and export
+  review reports.
+keywords:
+  - systematic review
+  - meta-analysis
+  - evidence synthesis
+  - literature screening
+  - research software
